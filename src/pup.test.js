@@ -5,13 +5,13 @@ const server = http.createServer((request, response) => {
   return handler(request, response, { public: "build" });
 });
 let browser;
-afterAll(() => {
-  browser.close();
+afterAll(async () => {
+  await browser.close();
   server.close();
 });
-beforeAll(() => {
-  browser = await puppeteer.launch();
+beforeAll(async () => {
   server.listen(3001);
+  browser = await puppeteer.launch();
 });
 it("checks title", async () => {
   const page = await browser.newPage();
