@@ -17,6 +17,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Build Client
         working-directory: ./client
+        env:
+          REACT_APP_API_URL: https://evren-banking-app.herokuapp.com
         run: |
           yarn
           yarn build

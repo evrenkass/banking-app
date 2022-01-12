@@ -18,6 +18,7 @@ export const CurrentUserInfo = () => {
   return (
     <ul className="navbar-nav ml-auto">
       <li className="nav-item dropdown">
+        {/* eslint-disable-next-line */}
         <a
           className="nav-link dropdown-toggle"
           href="#"
