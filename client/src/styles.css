@@ -1,0 +1,32 @@
+body {
+  background-size: 100%;
+}
+
+:root {
+  --bs-primary: #6a63f6;
+  --bs-primary-rgb: 106, 99, 246;
+  --bs-gray: #e5e5e5;
+  --bs-body-color: #2f2e40;
+  --bs-body-color-rgb: 47, 46, 64;
+}
+
+.btn-bank {
+  background-color: #6a63f6;
+  border-color: #6a63f6;
+  color: #ffffff;
+  transition: 0.2s transform;
+}
+
+.btn-bank:hover {
+  color: #ffffff;
+  background-color: #4a42f4;
+  border-color: #4a42f4;
+}
+
+.btn-bank:active {
+  transform: translateY(2px);
+}
+
+.link {
+  color: #6a63f6;
+}
