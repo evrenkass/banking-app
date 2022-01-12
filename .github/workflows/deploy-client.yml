@@ -3,11 +3,11 @@ name: Deploy Client
 on: [push]
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node_version: [12.x]
+        node_version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
