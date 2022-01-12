@@ -18,8 +18,8 @@ jobs:
       - name: Build Client
         working-directory: ./client
         run: |
-          npm install
-          npm run build
+          yarn
+          yarn build
       - name: Deploy Client to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
